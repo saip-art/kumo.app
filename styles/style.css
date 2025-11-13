@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: o;
+}
+
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Work+Sans:wght@400;500&display=swap');
+
+
+body {
+  background-color: #FCFAF4; /* fondo general */
+}
+
+/*Titulos*/
+
+  h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 72px;
+    color:#333333;
+  }
+
+  h2 {
+    font-family: 'Manrope', sans-serif;
+    color: #2A2F4F;
+  }
+
+  h3 {
+    font-family: 'Manrope', sans-serif;
+    color: #2A2F4F;
+  }
+
+  h4 {
+    font-family: 'Manrope', sans-serif;
+    color: #52225E
+  }
+
+/*Subtitulos*/
+  .subtitulo {
+    font-family: 'Work Sans', sans-serif;
+    color: #52225E;
+  }
+
+/*Parrafos*/
+
+  p, label, footer {
+    font-family: 'Work Sans', sans-serif;
+    color: #787878;
+  }
+
