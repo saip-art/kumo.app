@@ -89,6 +89,9 @@ nav {
   font-weight: 60;
 }
 
+body {
+  margin: 0 60px;
+}
 /*footer*/
 footer {
   margin: 0 60px;
@@ -97,7 +100,6 @@ footer {
 footer div {
   padding: 6px 20px;
 }
-
 
 .footer {
   width: 1200px;
@@ -121,6 +123,7 @@ footer div {
   justify-content: flex-start;
 }
 
+
 .stores {
   display: flex;
   align-items: center;
@@ -139,4 +142,74 @@ footer div {
 
 .copy {
   text-align: right;
+}
+
+/*HERO*/
+.hero {
+ background-image: url("../assets/bg\ hero.svg");
+ background-size: cover;
+ height: 100vh;
+ background-position: center center;
+ border-radius: 24px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+ margin: 0 60px;
+}
+
+/*Galeria index*/
+
+.titulo-galeria {
+  text-align: center;
+  padding: 32px;
+}
+
+.grid-container{ /*Falta estilizar las cards*/
+display: grid;
+
+grid-row: repeat (3, 150px);
+grid-template-columns: repeat (3, 1fr);
+gap: 24px;
+margin: 24px;
+
+grid-template-areas: 
+  "explora elige elige"
+  "explora conecta participa"
+  "impacta impacta sigue";
+}
+
+.items-galeria {
+  padding: 16px;
+  border-radius: 24px;
+} 
+
+.explora {
+  background-color: #AAC0E9;
+  grid-area: explora;
+}
+
+.elige {
+  background-color: #FFD3B6;
+  grid-area: elige;
+}
+
+.conecta {
+  background-color: #B8D8BE;
+  grid-area: conecta;
+}
+
+.participa {
+  background-color: #FEC868;
+  grid-area: participa;
+}
+
+.impacta {
+  background-color: #F6C6EA;
+  grid-area: impacta;
+}
+
+.sigue {
+  background-color: #AAC0E9;
+  grid-area: sigue ;
 }
