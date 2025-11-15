@@ -213,3 +213,117 @@ grid-template-areas:
   background-color: #AAC0E9;
   grid-area: sigue ;
 }
+
+
+/*Nosotros Page*/
+.nosotros-hero {
+  background-image: url("../assets/Banner-nosotros.svg");
+  background-size: cover;
+  height: 32vh;
+  background-position: center center;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 60px;
+}
+
+/*Primera seccion*/
+.proposito-seccion {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 50px 30px 60px 30px;
+  padding: 30px ;
+}
+
+.img-contenedor-proposito {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.img-contenedor-proposito img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+.proposito-text-container {
+  flex: 1.2;
+  padding-left: 20px;
+}
+
+.tagline-proposito {
+  background-color: #f3e9d7;   
+  display: inline-block;
+  padding: 5px 24px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.titulo-proposito {
+  margin: 0 60px 20px 0
+}
+
+.descripcion-proposito {
+  margin: 0 60px 20px 0
+}
+
+/*Segunda Seccion*/
+.innovacion-seccion {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 50px 30px 60px 30px;
+  padding: 30px ;
+}
+
+.img-contenedor-innovacion {
+  flex: 1;
+  padding-right: 60px;
+}
+
+.img-contenedor-innovacion img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+.innovacion-text-container {
+  flex: 1.2;
+  padding-left: 20px;
+}
+
+.tagline-innovacion {
+  background-color: #F0E4E9;   
+  display: inline-block;
+  padding: 5px 24px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.titulo-innovacion {
+  margin: 0 60px 20px 0
+}
+
+.descripcion-innovacion {
+  margin: 0 60px 20px 0
+}
+
+/*Galeria*/
+.galeria-seccion {
+padding: 60px 20px;
+text-align: center;
+}
+
+.galeria-seccion h2 {
+  margin-bottom: 40px;
+}
+
+.galeria-contenedor-flex {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
