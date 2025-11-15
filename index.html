@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="styles/style.css">
 
@@ -12,9 +14,8 @@
 <body>
     <header>
         <nav class="navbar-flex">
-            <img class="logo-kumo" src="./assets/Logo.svg" alt="Logo Kumo">
+            <a href="#"><img class="logo-kumo" src="./assets/Logo.svg" alt="Logo Kumo"></a>
             <ul>
-                <li><a href="#">Inicio</a></li>
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/oportunidades.htm">Oportunidades</a></li>
                 <li><a href="./pages/faq.html">FAQ</a></li>
@@ -50,7 +51,7 @@
             <article class="items-galeria conecta">
                 <h3>Conecta</h3>
                 <p>Inscríbete fácilmente y contacta con organizaciones en segundos.</p>
-                <img src="assets/conecta img.png"
+                <img src="assets/conecta img.png">
             </article>
 
             <article class="items-galeria participa">
@@ -68,21 +69,28 @@
             <article class="items-galeria impacta">
                 <h3>Sigue ayudando</h3>
                 <p>Tu compromiso no termina, ¡el cambio continúa!</p>
-                <img src="assets/sigue ayudando img.png"
+                <img src="assets/sigue ayudando img.png">
             </article>
 
         </section>
-
-        <!--Siento que no cuenta como footer aunque ira siempre al final de las paginas-->
-        <section>
-            <h2>Empieza a ayudar hoy</h2>
-            <p>Cada acción cuenta. Únete y haz la diferencia</p>
-            <img src="assets/android.jpg" alt="Disponible en Google Play">
-            <img src="assets/apple.jpg" alt="Disponible en App Store">
-        </section>
     </main>
 
-    <footer>© 2025 Kumo App</footer>
-
+    <footer> <!--di todo de mi en este footer jaaj-->
+        <section class="footer">
+            <img class="iso-footer" src="./assets/isotipo.svg" alt="isotipo">
+            <div class="footer-content">
+                <div class="footer-text">
+                <h2>Empieza a ayudar hoy</h2>
+                <p>Cada acción cuenta. Únete y haz la diferencia</p>
+                </div>
+                    <div class="stores">
+                        <img class="android-footer" src="assets/android.jpg" alt="Disponible en Google Play">
+                        <img class="apple-footer" src="assets/apple.jpg" alt="Disponible en App Store">
+                    </div>
+            </div>
+        </section>
+        <div class="copy">© 2025 Kumo App</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

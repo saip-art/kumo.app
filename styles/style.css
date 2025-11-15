@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: o;
+  padding: 0;
 }
 
 /* Importar fuentes */
@@ -9,28 +9,25 @@
 
 body {
   background-color: #FCFAF4; /* fondo general */
+  font-family: 'Manrope', sans-serif;
 }
 
 /*Titulos*/
 
   h1 {
-    font-family: 'Manrope', sans-serif;
     font-size: 72px;
     color:#333333;
   }
 
   h2 {
-    font-family: 'Manrope', sans-serif;
     color: #2A2F4F;
   }
 
   h3 {
-    font-family: 'Manrope', sans-serif;
     color: #2A2F4F;
   }
 
   h4 {
-    font-family: 'Manrope', sans-serif;
     color: #52225E
   }
 
@@ -47,3 +44,99 @@ body {
     color: #787878;
   }
 
+
+/*Nav bar*/
+header {
+  width: 100%;
+  padding: 20px 60px;
+}  
+
+nav {
+  /*no logre alinear los links con el logo */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+
+.navbar-flex { /*no logre hacer que los links se alineen al logo, podrias ayudarme?*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-kumo {
+  height: 48px;
+}
+
+.navbar-flex ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-flex a {
+  text-decoration: none;
+  color: #2A2F4F;
+  font-size: 16px;
+}
+
+.cta a {
+  background-color: #ffd3b6;
+  padding: 14px 24px;
+  border-radius: 36px;
+  font-weight: 60;
+}
+
+/*footer*/
+footer {
+  margin: 0 60px;
+}
+
+footer div {
+  padding: 6px 20px;
+}
+
+
+.footer {
+  width: 1200px;
+  padding: 96px 0;
+  display: grid;
+  grid-template-columns: 180px auto;
+  gap: 60px;
+  align-items: center;
+}
+
+.iso-footer {
+    width: 100%; 
+    grid-column: 1; 
+    grid-row: 1; 
+    justify-self: center; 
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stores {
+  display: flex;
+  align-items: center;
+}
+
+.android-footer,
+.apple-footer {
+    height: 48px; 
+    width: auto;
+    display: block; 
+}
+
+.android-footer {
+    margin-right: 18px; 
+}
+
+.copy {
+  text-align: right;
+}
