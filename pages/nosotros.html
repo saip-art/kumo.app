@@ -13,15 +13,35 @@
 </head>
 <body>
     <header>
-        <nav class="navbar-flex">
-            <a href="../index.html"><img class="logo-kumo" src="../assets/Logo.svg" alt="Logo Kumo"></a>
-            <ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="kumo-navbar-container">
+                
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo-kumo" src="../assets/Logo.svg" alt="Logo Kumo">
+                </a>
 
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="./oportunidades.htm">Oportunidades</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li class="cta"><a href="./contacto.html">Contáctanos</a></li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kumoNavbarContent" aria-controls="kumoNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="kumoNavbarContent">
+                    
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./oportunidades.htm">Oportunidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                    
+                    <a class="btn btn-primary kumo-cta-btn" href="./contacto.html">Contáctanos</a>
+
+                </div>
+            </div>
         </nav>
     </header>
     
@@ -52,7 +72,6 @@
             </div>
         </section>
 
-        <!--Será una galeria con scroll horizontal-->
         <section class="galeria-seccion"> <h2>Nuestra comunidad en acción</h2>
             <div class="galeria-contenedor-flex">  
                 <img src="../assets/gallery1.jpg" alt="Voluntarios en actividad">
@@ -63,8 +82,7 @@
             </div>
         </section>
 
-
-    <footer>
+    <footer> 
         <section class="footer">
             <img class="iso-footer" src="../assets/isotipo.svg" alt="isotipo">
             <div class="footer-content">
@@ -79,7 +97,8 @@
             </div>
         </section>
         <div class="copy">© 2025 Kumo App</div>
-    </footer> 
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -13,14 +13,35 @@
 </head>
 <body>
     <header>
-        <nav class="navbar-flex">
-            <a href="#"><img class="logo-kumo" src="./assets/Logo.svg" alt="Logo Kumo"></a>
-            <ul>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/oportunidades.htm">Oportunidades</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
-                <li class="cta"><a href="./pages/contacto.html">Contáctanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="kumo-navbar-container">
+                
+                <a class="navbar-brand" href="#">
+                    <img class="logo-kumo" src="./assets/Logo.svg" alt="Logo Kumo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kumoNavbarContent" aria-controls="kumoNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="kumoNavbarContent">
+                    
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/oportunidades.htm">Oportunidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                    
+                    <a class="btn btn-primary kumo-cta-btn" href="./pages/contacto.html">Contáctanos</a>
+
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -76,7 +97,7 @@
         </section>
     </main>
 
-    <footer> <!--di todo de mi en este footer jaaj-->
+    <footer> 
         <section class="footer">
             <img class="iso-footer" src="./assets/isotipo.svg" alt="isotipo">
             <div class="footer-content">
