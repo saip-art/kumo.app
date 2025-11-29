@@ -1,0 +1,107 @@
+@use '../utilities/variables' as v;
+
+.contacto-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px ; 
+}
+
+.contacto-form-card {
+  display: flex; 
+  width: 100%;
+  background-color: v.$color-fondo-blanco; 
+  border-radius: v.$border-radius-xl;
+  box-shadow: v.$shadow-card;
+}
+
+.contacto-form-card section {
+  width: 40%; 
+  background-image: url("../assets/bg-form.svg"); 
+  background-size: cover;
+  background-position: center;
+  padding: 60px 40px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  color: v.$color-fondo-blanco;
+  border-radius: v.$border-radius-xl 0 0 v.$border-radius-xl;
+}
+
+.contacto-form-card section h2 {
+  color: v.$color-primario;
+  font-family: v.$font-principal;
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+.contacto-form-card section p {
+  color: v.$color-texto-claro;
+  font-family: v.$font-secundaria;
+  font-size: 18px;
+}
+
+.contacto-form-card form {
+  width: 60%; 
+  padding: 60px 50px;
+}
+
+.contacto-form-card label {
+  font-family: 'Manrope', sans-serif;
+  color: v.$color-texto-claro; 
+  font-size: 14px;
+  margin-top: 20px; 
+  margin-bottom: 4px; 
+}
+
+.contacto-form-card input[type="text"], 
+.contacto-form-card input[type="email"],
+.contacto-form-card textarea {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #D9D9D9; 
+  background-color: transparent;
+  font-size: 16px;
+  font-family: v.$font-secundaria;
+  color: v.$color-texto-oscuro;
+  outline: none; 
+  resize: none; 
+}
+
+.contacto-form-card button[type="submit"] {
+  background-color: v.$color-cta-principal; 
+  color: v.$color-texto-oscuro; 
+  border: none;
+  padding: 12px 40px; 
+  border-radius: 24px; 
+  font-weight: 600; 
+  font-family: v.$font-principal;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+}
+
+.contacto-form-card button[type="submit"]:hover {
+    background-color: v.$color-cta-hover; 
+}
+
+@media (max-width: 991px) {
+  .contacto-hero {
+    margin: 0 18px;
+  }
+  .contacto-container {
+    padding: v.$padding-responsive;
+  }
+  .contacto-form-card {
+    display: block; 
+  }
+  .contacto-form-card section{
+    width: 100%;
+    border-radius: v.$border-radius-xl v.$border-radius-xl 0 0;
+  }
+  .contacto-form-card form {
+    width: 100%;
+  }
+}

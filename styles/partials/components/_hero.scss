@@ -1,0 +1,72 @@
+@use '../utilities/variables' as v;
+
+
+//hero index
+.hero {
+  background-image: url("../assets/bg hero.svg");
+  background-size: cover;
+  min-height: 80vh; 
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+  padding-top: 80px; 
+  padding-bottom: 80px; 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  position:relative;
+  
+  margin: 0 v.$margin-base 40px v.$margin-base; 
+
+  h1 { text-align: center; margin-bottom: 28px; }
+
+  > div { display: flex; gap: 16px; margin-bottom: 48px; }
+
+  .descargar { height: 48px; }
+
+  .hero-image {
+    width: 300px;
+    position: absolute;
+    bottom: -320px;
+  }
+}
+
+//hero variables
+.hero, .nosotros-hero, .oportunidades-hero, .contacto-hero, .faq-hero {
+  border-radius: v.$border-radius-xl;
+  margin: 0 v.$margin-base;
+}
+.nosotros-hero, .oportunidades-hero, .contacto-hero, .faq-hero {
+  background-size: cover;
+  height: 32vh;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nosotros-hero { background-image: url("../assets/Banner-nosotros.svg"); }
+.oportunidades-hero { background-image: url("../assets/Banner-oportunidades.svg"); }
+.contacto-hero { background-image: url("../assets/Banner-contacto.svg"); }
+.faq-hero { background-image: url("../assets/Banner-FAQ.svg"); }
+
+@media (max-width: 991px) {
+  .hero { 
+    margin: 20px v.$padding-responsive 40px v.$padding-responsive; 
+    padding-bottom: 60px;
+
+    h1 { margin: 20px; }
+
+    .hero-image { 
+      width: 250px; 
+      bottom: -300px; 
+    }
+  }
+
+  .nosotros-hero, .oportunidades-hero, .contacto-hero, .faq-hero { 
+    margin: 0 v.$padding-responsive; 
+    height: 25vh;
+  }
+}

@@ -11,6 +11,8 @@
 
      <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="/styles/style.css">
 
@@ -57,7 +59,7 @@
 
         <section class="proposito-seccion"> 
             <div class="img-contenedor-proposito"> 
-                <img src="../assets/us1.jpg" alt="Personas Celular">            
+                <img div data-aos="fade-right" data-aos-duration="1500" src="../assets/us1.jpg" alt="Personas Celular">            
             </div> 
             <div class="proposito-text-container"> 
               <h3 class="tagline-proposito">Personas con propósito</h3> 
@@ -72,7 +74,7 @@
                 <h2 class="titulo-innovacion">Tecnología al servicio del bienestar colectivo</h2>
                 <p class="descripcion-innovacion">Nuestro objetivo es hacer que el voluntariado sea accesible, simple y sostenible. A través de Kumo, podés encontrar oportunidades cercanas, registrarte en segundos y seguir el impacto de tus acciones. Usamos la tecnología como un medio para unir a las personas y construir comunidades más solidarias.</p>
             </div>
-            <div class="img-contenedor-innovacion"> 
+            <div div data-aos="fade-left" data-aos-duration="1500" class="img-contenedor-innovacion"> 
                 <img src="../assets/us2.jpg" alt="Personas Celular">
             </div>
         </section>
@@ -89,14 +91,15 @@
 
     <footer> 
         <section class="footer">
-            <img class="iso-footer" src="../assets/isotipo.svg" alt="isotipo">
+            <img class="iso-footer" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" src="../assets/isotipo.svg" alt="isotipo">
             <div class="footer-content">
                 <div class="footer-text">
                 <h2>Empieza a ayudar hoy</h2>
                 <p>Cada acción cuenta. Únete y haz la diferencia</p>
                 </div>
                     <div class="stores">
-                        <img class="android-footer" src="../assets/android.jpg" alt="Disponible en Google Play">
+                        <img class="android-footer"  src="../assets/android.jpg" alt="Disponible en Google Play">
                         <img class="apple-footer" src="../assets/apple.jpg" alt="Disponible en App Store">
                     </div>
             </div>
@@ -105,5 +108,10 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

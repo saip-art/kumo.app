@@ -11,6 +11,8 @@
 
      <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="/styles/style.css">
 
@@ -57,7 +59,7 @@
 
         <section class="red-seccion">
             <div class="img-contenedor-proposito">
-                <img src="../assets/op1.jpg" alt="Red de voluntarios">
+                <img div data-aos="fade-right" data-aos-duration="1500" src="../assets/op1.jpg" alt="Red de voluntarios">
             </div>
             <div class="red-text-container">
                 <h3 class="tagline-red">Red de impacto</h3>
@@ -65,8 +67,6 @@
                 <p class="descripcion-red" >Cada organización con la que colaboramos comparte el mismo propósito: mejorar la vida de las personas y cuidar el entorno que habitamos. En Kumo conectamos a quienes desean ayudar con instituciones que llevan adelante proyectos reales, sostenibles y con impacto. Juntos, multiplicamos las oportunidades de hacer el bien.</p>
             </div>
         </section>
-
-        <!--Cada organización ira en un box con un tag que represente caracteristicas. Tambien habra scroll horizontal-->
 
         <section class="organizaciones-section">
             <h2 class="titulo-organizaciones">Organizaciones que confían en Kumo</h2>
@@ -155,7 +155,8 @@
         </section>
     <footer>
         <section class="footer">
-            <img class="iso-footer" src="../assets/isotipo.svg" alt="isotipo">
+            <img class="iso-footer" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" src="../assets/isotipo.svg" alt="isotipo">
             <div class="footer-content">
                 <div class="footer-text">
                 <h2>Empieza a ayudar hoy</h2>
@@ -170,5 +171,10 @@
         <div class="copy">© 2025 Kumo App</div>
     </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>    
 </body>
 </html>

@@ -1,0 +1,64 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+
+.proposito-seccion, .innovacion-seccion, .red-seccion {
+  @include m.section-layout;
+}
+
+@media (max-width: 991px) {
+  .proposito-seccion, .innovacion-seccion, .red-seccion {
+    flex-direction: column; 
+    margin: 30px v.$padding-responsive 40px v.$padding-responsive;
+    padding: v.$padding-responsive 0;
+  }
+  
+  .innovacion-seccion { 
+    flex-direction: column-reverse; 
+  }
+}
+
+.img-contenedor-proposito, .img-contenedor-innovacion, .img-contenedor-red {
+  flex: 1;
+  
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 991px) {
+  .img-contenedor-proposito, .img-contenedor-innovacion, .img-contenedor-red {
+    padding-right: 0;
+    margin-bottom: v.$padding-base;
+  }
+}
+
+
+// contenedores de texto 
+.proposito-text-container, .innovacion-text-container, .red-text-container {
+  flex: 1.2;
+  padding-left: 20px;
+}
+@media (max-width: 991px) {
+  .proposito-text-container, .innovacion-text-container, .red-text-container {
+    padding-left: 0;
+  }
+}
+
+
+//taglines
+.tagline-proposito, .tagline-innovacion, .tagline-red {
+  display: inline-block;
+  padding: 5px v.$padding-base;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.tagline-proposito { background-color: v.$color-tagline-proposito; }
+.tagline-innovacion { background-color: v.$color-tagline-innovacion; }
+.tagline-red { background-color: v.$color-tagline-red; }
+
+.titulo-proposito, .titulo-innovacion, .titulo-red { margin: 0 v.$margin-base 20px 0 }
+.descripcion-proposito, .descripcion-innovacion, .descripcion-red { margin: 0 v.$margin-base 20px 0 }
