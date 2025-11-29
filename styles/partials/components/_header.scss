@@ -1,0 +1,50 @@
+// partials/components/_header.scss
+
+@use '../utilities/variables' as v;
+
+.navbar { padding: 0px 0; }
+
+#kumo-navbar-container { 
+  padding: 42px v.$margin-base; 
+  justify-content: space-between; 
+}
+
+.logo-kumo { width: 160px; }
+
+.navbar-nav {
+  .nav-link {
+    font-family: v.$font-principal;
+    color: v.$color-texto-oscuro; 
+    margin-right: 20px; 
+    font-size: 16px; 
+  }
+}
+
+.kumo-cta-btn {
+  background-color: v.$color-cta-principal; 
+  color: v.$color-texto-oscuro; 
+  border: none;
+  padding: 10px 32px;
+  border-radius: 22px; 
+  font-weight: 600; 
+  margin-left: 15px;
+  transition: background-color 0.2s;
+
+  &:hover { 
+    background-color: v.$color-cta-hover; 
+    color: v.$color-texto-oscuro;
+  }
+}
+
+@media (max-width: 991px) { 
+  #kumo-navbar-container {
+    padding: 16px 8px 16px 16px;
+  }
+    
+  .kumo-cta-btn {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,143 @@
+// partials/components/_cards.scss
+
+@use '../utilities/variables' as v;
+
+//galeria home
+.titulo-galeria {
+  text-align: center;
+  padding: 400px 0 32px;
+}
+
+.grid-container{ 
+  display: grid;
+  grid-template-rows: repeat(3, minmax(250px, auto));
+  grid-template-columns: repeat(3, 1fr); 
+  gap: v.$padding-base;
+  margin: v.$padding-base 0 40px;
+
+  grid-template-areas: 
+    "explora elige elige"
+    "explora conecta participa"
+    "impacta impacta sigue";
+}
+
+.items-galeria {
+  padding: v.$padding-base;
+  border-radius: v.$border-radius-xl;
+  position: relative;
+  overflow: hidden; 
+} 
+
+.explora { background-color: v.$color-card-explora; grid-area: explora; }
+.elige { background-color: v.$color-card-elige; grid-area: elige; }
+.conecta { background-color: v.$color-card-conecta; grid-area: conecta; }
+.participa { background-color: v.$color-card-participa; grid-area: participa; }
+.impacta { background-color: v.$color-card-impacta; grid-area: impacta; }
+.sigue { background-color: v.$color-card-sigue; grid-area: sigue ; }
+
+@media (max-width: 991px) {
+  .titulo-galeria { padding: 300px 0 20px; }
+
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; 
+    margin: 0;
+    padding-bottom: 20px;
+    width: 100%;
+  } 
+
+  .grid-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .items-galeria {
+    flex: 0 0 280px;
+    margin-right: 8px;
+    height: 340px;
+    grid-area: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+
+//organizaciones
+.titulo-organizaciones { text-align: left; }
+
+.organizaciones-section { padding: 0 0 0px v.$margin-base; }
+
+.organizaciones-grid {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling:touch;
+  padding-top: 32px;
+  gap: v.$padding-base;
+}
+
+.org-card {
+  background-color: v.$color-fondo-blanco;
+  border-radius: v.$border-radius-base;
+  box-shadow: v.$shadow-card;
+  padding: v.$padding-base;
+  margin-bottom: v.$border-radius-base;
+
+  flex: 0 0 320px;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.org-logo {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin: 20px 0 16px;
+}
+
+.org-card h3 { margin-bottom: 8px; }
+
+.org-card p { margin-bottom: v.$padding-base; flex-grow: 1; }
+
+.web-link {
+  text-decoration: none;
+  color: v.$color-primario;
+  margin-bottom: v.$border-radius-base;
+  
+  &:hover { color: v.$color-cta-hover; }
+}
+
+
+.card-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: v.$border-radius-base;
+  color: v.$color-primario;
+  align-self: flex-end;
+}
+
+.card-tag img {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+}
+
+.card-tag-rurales { background-color: v.$color-tag-rurales; }
+.card-tag-ambiente { background-color: v.$color-tag-ambiente; }
+.card-tag-infancias { background-color: v.$color-tag-infancias; }
+.card-tag-animales { background-color: v.$color-tag-animales; }
+
+@media (max-width: 991px) {
+
+  .organizaciones-section { padding: 0 0 0px v.$padding-responsive; }
+}

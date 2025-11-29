@@ -1,0 +1,35 @@
+// partials/base/_tipografia.scss
+
+@use '../utilities/variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Work+Sans:wght@400;500&display=swap');
+
+body {
+  background-color: v.$color-fondo-general;
+  font-family: v.$font-principal;
+  margin: 0 v.$margin-base;
+
+  h1 { font-size: 72px; color: v.$color-texto-oscuro; }
+  h2 { color: v.$color-primario; }
+  h3 { color: v.$color-primario; }
+  h4 { color: v.$color-secundario; }
+
+  .subtitulo {
+    font-family: v.$font-secundaria;
+    color: v.$color-secundario;
+  }
+
+  p, label, footer {
+    font-family: v.$font-secundaria;
+    color: v.$color-texto-claro;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    margin: 0 v.$padding-responsive;
+  }
+  h1 { 
+    font-size: 48px; 
+  }
+}

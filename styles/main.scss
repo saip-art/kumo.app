@@ -1,0 +1,11 @@
+
+@use './partials/utilities/variables' as v;
+@use './partials/utilities/mixins' as m;
+
+@use './partials/base/reset';
+@use './partials/base/tipografia';
+
+@use './partials/components/header';
+@use './partials/components/footer';
+@use './partials/components/general';
+@use './partials/components/cards';

@@ -1,0 +1,80 @@
+// partials/components/_footer.scss
+
+@use '../utilities/variables' as v;
+
+footer {
+  margin: 0 v.$margin-base;
+}
+
+.footer {
+  width: 100%;
+  padding: 96px 0;
+  display: grid;
+  grid-template-columns: 180px auto;
+  gap: v.$margin-base;
+  align-items: center;
+}
+
+.copy {
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer div {
+  padding: 6px 0px;
+}
+
+.iso-footer {
+  width: 100%; 
+  grid-column: 1; 
+  grid-row: 1; 
+  justify-self: center; 
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stores {
+  display: flex;
+  align-items: center;
+}
+
+.android-footer,
+.apple-footer {
+  height: 48px; 
+  width: auto;
+  display: block; 
+}
+
+.android-footer {
+  margin-right: v.$padding-responsive; 
+}
+
+@media (max-width: 991px) { 
+  footer {
+    margin: v.$padding-responsive;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 0;
+    text-align: left;
+    display: grid;
+  }
+
+  .iso-footer {
+    width: 180px;
+    margin: 0;
+    grid-column: 1 / -1;
+    order: 1;
+    justify-self: start;
+  }
+
+  .copy {
+    padding: 0 v.$padding-responsive;
+  }
+}

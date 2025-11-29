@@ -1,0 +1,8 @@
+//proposito, innovacion, red
+@mixin section-layout {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 50px 30px 60px 30px;
+  padding: 30px;
+}
