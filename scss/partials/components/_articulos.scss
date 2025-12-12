@@ -1,0 +1,31 @@
+@use '../utilities/extend';
+@use '../utilities/mixins';
+
+article {
+    @extend %articulos;
+}
+
+article div h3 {
+    @extend %tagline
+}
+
+.taglineproposito {
+    background-color:#f3e9d7 ;
+}
+
+.taglineinnovacion {
+      background-color: #F0E4E9;   
+}
+
+.taglinered {
+    background-color: #E6E9EC;   
+}
+
+.img-contenedor-article {
+    @extend %imgcontenedor;
+}
+
+.article-text-container {
+    @include mixins.text-conteiner (center);
+}
+

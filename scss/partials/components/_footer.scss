@@ -1,9 +1,8 @@
-// partials/components/_footer.scss
-
-@use '../utilities/variables' as v;
+@use '../utilities/variables';
+@use '../utilities/mixins';
 
 footer {
-  margin: 0 v.$margin-base;
+  margin: variables.$margin-desktop;
 }
 
 .footer {
@@ -11,7 +10,7 @@ footer {
   padding: 96px 0;
   display: grid;
   grid-template-columns: 180px auto;
-  gap: v.$margin-base;
+  gap: 60px;
   align-items: center;
 }
 
@@ -25,16 +24,14 @@ footer div {
 }
 
 .iso-footer {
-  width: 100%; 
-  grid-column: 1; 
-  grid-row: 1; 
-  justify-self: center; 
+    width: 100%; 
+    grid-column: 1; 
+    grid-row: 1; 
+    justify-self: center; 
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+    @include mixins.flex (column, flex-start, auto)
 }
 
 .stores {
@@ -50,12 +47,12 @@ footer div {
 }
 
 .android-footer {
-  margin-right: v.$padding-responsive; 
+  margin-right: 18px; 
 }
 
 @media (max-width: 991px) { 
   footer {
-    margin: v.$padding-responsive;
+    margin: variables.$margin-mobile;
   }
 
   .footer {
@@ -65,16 +62,14 @@ footer div {
     text-align: left;
     display: grid;
   }
-
   .iso-footer {
     width: 180px;
-    margin: 0;
     grid-column: 1 / -1;
     order: 1;
     justify-self: start;
   }
 
   .copy {
-    padding: 0 v.$padding-responsive;
+    padding: variables.$margin-mobile;
   }
 }

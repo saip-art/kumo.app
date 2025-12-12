@@ -1,0 +1,96 @@
+@use '../utilities/variables'; 
+
+.titulo-galeria {
+    text-align: center;
+    margin: variables.$margin-desktop;
+    padding-top: 368px;
+    padding-bottom: 24px;
+}
+
+
+.grid-container{
+display: grid;
+margin: variables.$margin-desktop;
+gap: 24px;
+padding: 0%;
+
+grid-template-areas: 
+  "explora elige elige"
+  "explora conecta participa"
+  "impacta impacta sigue";
+}
+
+.items-galeria {
+  padding: 24px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+} 
+
+.explora {
+  background-color: #AAC0E9;
+  grid-area: explora;
+}
+
+.elige {
+  background-color: #FFD3B6;
+  grid-area: elige;
+}
+
+.conecta {
+  background-color: #B8D8BE;
+  grid-area: conecta;
+}
+
+.participa {
+  background-color: #FEC868;
+  grid-area: participa;
+}
+
+.impacta {
+  background-color: #F6C6EA;
+  grid-area: impacta;
+}
+
+.sigue {
+  background-color: #AAC0E9;
+  grid-area: sigue ;
+}
+
+
+@media (max-width: 991px) {
+.titulo-galeria {
+    margin: variables.$margin-mobile;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    margin: 0;
+    padding-bottom: 20px;
+    width: 100%;
+  }  
+
+  .grid-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .items-galeria {
+    flex: 0 0 280px;
+    margin-right: 8px;
+    height: 340px;
+    grid-area: unset;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 460px;
+  }
+}

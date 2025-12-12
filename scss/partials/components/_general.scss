@@ -1,0 +1,250 @@
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+//hero index
+.hero {
+ background-image: url("../assets/bg\ hero.svg");
+ background-size: cover;
+ height: 80vh;
+ background-repeat: no-repeat;
+ background-position: top center;
+ padding: 80px 0 80px 0;
+ border-radius: 24px;
+ @include mixins.flex (column, flex-start, center);
+ margin: variables.$margin-desktop;
+
+position: relative;
+
+}
+
+.hero h1 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 72px;
+  color: variables.$main-color;
+}
+
+.hero > div {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.hero .descargar {
+  height: 48px;
+}
+
+.hero-image {
+  width: 300px;
+  position: absolute;
+  bottom: -280px;
+}
+
+@media (max-width: 991px) {
+  .hero { 
+    margin: 20px;
+    padding-bottom: 60px;}
+
+    h1 { margin: 20px; }
+
+    .hero-image { 
+      width: 250px; 
+      bottom: -300px; 
+    }
+  }
+
+//acordion faq
+.accordion {
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-radius:0 ;
+    padding: 24px 0;
+    margin: variables.$margin-desktop;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+.accordion-button {
+  background-color: transparent ;
+  box-shadow: none;
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  color: variables.$dark-grey;
+  padding: 36px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: variables.$main-color ;
+}
+
+.accordion-body {
+  font-family: 'Work Sans', sans-serif;
+  color: variables.$light-grey;
+  padding: 20px 0 24px 60px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom: none;
+}
+
+.accordion-item:last-of-type .accordion-collapse.show .accordion-body {
+  border-bottom: none;
+}
+
+@media (max-width: 991px) {
+  .accordion { 
+    margin: variables.$margin-mobile; 
+  }
+
+  .accordion-item {
+    .accordion-button {
+      font-size: 22px;
+      padding: 28px ;
+    }
+
+    .accordion-body {
+      padding: 20px 40px;
+    }
+  }
+}
+
+//Contact us form
+
+.contacto-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px ; 
+}
+
+.contacto-form-card {
+  display: flex; 
+  width: 100%;
+  background-color: #FFFFFF; 
+  border-radius: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contacto-form-card section {
+  width: 40%; 
+  background-image: url("../assets/bg-form.svg"); 
+  background-size: cover;
+  background-position: center;
+  padding: 60px 40px;
+  @include mixins.flex (column, center, auto);
+  color: #FFFFFF;
+  border-radius: 24px 0 0 24px;
+}
+
+.contacto-form-card section h2 {
+  color: variables.$main-color;
+  font-family: 'Manrope', sans-serif;
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+.contacto-form-card section p {
+  color: variables.$light-grey;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+}
+
+.contacto-form-card form {
+  width: 60%; 
+  padding: 60px 50px;
+}
+
+.contacto-form-card label {
+  font-family: 'Manrope', sans-serif;
+  color: variables.$light-grey; 
+  font-size: 14px;
+  margin-top: 20px; 
+  margin-bottom: 4px; 
+}
+
+.contacto-form-card input[type="text"], 
+.contacto-form-card input[type="email"],
+.contacto-form-card textarea {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid variables.$light-grey; 
+  background-color: transparent;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  color: variables.$dark-grey;
+  outline: none; 
+  resize: none; 
+}
+
+.contacto-form-card button[type="submit"] {
+  background-color: #F8C3A7; 
+  color: variables.$dark-grey ; 
+  border: none;
+  padding: 12px 40px; 
+  border-radius: 24px; 
+  font-weight: 600; 
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+}
+
+.contacto-form-card button[type="submit"]:hover {
+    background-color: #ffaa7d; 
+}
+
+@media (max-width: 991px) {
+  .contacto-hero {
+    margin: variables.$margin-mobile;
+  }
+  .contacto-container {
+    padding: 18px;
+  }
+  .contacto-form-card {
+    display: block; 
+  }
+  .contacto-form-card section{
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+  }
+  .contacto-form-card form {
+    width: 100%;
+  }
+}
+
+//galeria nosotros
+
+.galeria-seccion {
+margin: variables.$margin-desktop;
+text-align: center;
+}
+
+.galeria-seccion h2 {
+  margin-bottom: 40px;
+}
+
+.galeria-contenedor-flex {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+ @media (max-width: 991px) {
+    .galeria-seccion {
+        margin: variables.$margin-mobile;
+    }
+.galeria-contenedor-flex {
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling:touch;
+  gap: 15px;
+    }
+ }

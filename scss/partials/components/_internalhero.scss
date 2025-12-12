@@ -1,0 +1,26 @@
+@use '../utilities/variables';
+@use '../utilities/extend';
+
+.inter-hero {
+    @extend %interhero;
+}
+
+.oportunidades-hero {
+  background-image: url("../assets/Banner-oportunidades.svg");    
+}
+.nosotros-hero {
+  background-image: url("../assets/Banner-nosotros.svg");    
+}
+.contacto-hero {
+  background-image: url("../assets/Banner-contacto.svg");
+}
+
+.faq-hero {
+  background-image: url("../assets/Banner-FAQ.svg");    
+}
+
+@media (max-width: 991px) {
+  .inter-hero {
+    margin: variables.$margin-mobile;
+  }
+}

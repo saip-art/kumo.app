@@ -1,0 +1,46 @@
+/* Importar fuentes */
+@use '../utilities/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Work+Sans:wght@400;500&display=swap');
+
+
+
+body {
+  background-color: #FCFAF4;
+  font-family: 'Manrope', sans-serif;
+  margin: 0 variables.$margin-desktop;
+}
+
+/*Titulos*/
+
+  h1 {
+    font-size: 72px;
+    color: variables.$main-color;
+  }
+
+  h2 h3 {
+    color: variables.$main-color;
+  }
+
+  h4 {
+    color: variables.$second-color;
+  }
+
+/*Subtitulos*/
+  .subtitulo {
+    font-family: 'Work Sans', sans-serif;
+    color: variables.$second-color;
+  }
+
+/*Parrafos*/
+
+  p, label, footer {
+    font-family: 'Work Sans', sans-serif;
+    color: variables.$light-grey;
+    }
+  
+  @media (max-width: 991px) { 
+    body {
+        margin: 0 variables.$margin-mobile ;
+    }
+  }

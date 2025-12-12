@@ -1,0 +1,66 @@
+@use '../utilities/variables';
+
+.navbar {
+    padding: 0px; 
+}
+
+#kumo-navbar-container {
+    margin: variables.$margin-desktop;
+    padding: 32px 0;
+}
+
+.logo-kumo {
+    width: 160px; 
+}
+
+.navbar .container-fluid {
+    justify-content: space-between; 
+}
+
+
+.navbar-nav .nav-link {
+    font-family: 'Manrope', sans-serif;
+    color: variables.$dark-grey; 
+    margin-right: 20px; 
+    font-size: 16px; 
+}
+
+.kumo-cta-btn {
+    background-color: #F8C3A7; 
+    color: variables.$dark-grey; 
+    border: none;
+    padding: 10px 32px;
+    border-radius: 22px; 
+    font-weight: 600; 
+    
+    margin-left: 15px;
+    transition: background-color 0.2s;
+}
+
+.kumo-cta-btn:hover {
+    background-color: #ffaa7d; 
+    color: variables.$dark-grey;
+}
+
+
+@media (max-width: 991px) { 
+    .navbar { margin: variables.$margin-mobile;} 
+
+    .kumo-cta-btn {
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #kumo-navbar-container {
+        margin: variables.$margin-mobile;
+    }
+    
+    .kumo-cta-btn {
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
