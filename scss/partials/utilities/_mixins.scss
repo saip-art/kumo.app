@@ -5,8 +5,3 @@
     align-items: $align;
 }
 
-@mixin text-conteiner ($justify) {
-    flex: 1.2;
-    margin: 60px;
-    justify-content: $justify;
-}

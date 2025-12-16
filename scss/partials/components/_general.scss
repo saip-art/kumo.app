@@ -37,7 +37,7 @@ position: relative;
 .hero-image {
   width: 300px;
   position: absolute;
-  bottom: -280px;
+  bottom: -380px;
 }
 
 @media (max-width: 991px) {
@@ -49,7 +49,7 @@ position: relative;
 
     .hero-image { 
       width: 250px; 
-      bottom: -300px; 
+      bottom: -400px; 
     }
   }
 
@@ -228,12 +228,13 @@ text-align: center;
 
 .galeria-seccion h2 {
   margin-bottom: 40px;
+  margin-top: 80px;
 }
 
 .galeria-contenedor-flex {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 38px;
 }
 
  @media (max-width: 991px) {

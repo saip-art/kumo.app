@@ -117,7 +117,6 @@ footer {
 
 .copy {
   text-align: right;
-  margin-top: 20px;
 }
 
 footer div {
@@ -200,8 +199,8 @@ article {
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 50px 30px 60px 30px;
-  padding: 30px;
+  margin: 50px 60px 60px 60px;
+  padding: 30px 0;
 }
 
 article div h3 {
@@ -216,15 +215,11 @@ article div h3 {
   width: 100%;
   display: block;
   border-radius: 6px;
-  flex: 1;
-}
-
-.organizaciones-section {
-  margin: 0px 60px;
 }
 
 .titulo-organizaciones {
   text-align: left;
+  margin: 0px 60px;
 }
 
 .organizaciones-grid {
@@ -235,6 +230,25 @@ article div h3 {
   -webkit-overflow-scrolling: touch;
   padding-top: 32px;
   gap: 24px;
+  margin: 0px 60px;
+}
+
+.org-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 32px;
+  flex: 0 0 320px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.organizaciones-section article {
+  margin: 0;
 }
 
 .org-logo {
@@ -249,7 +263,7 @@ article div h3 {
 }
 
 .org-card p {
-  margin-bottom: 24px;
+  margin-bottom: 0px 60px;
   flex-grow: 1;
 }
 
@@ -258,9 +272,8 @@ article div h3 {
   color: #2A2F4F;
   margin-bottom: 12px;
 }
-
 .web-link:hover {
-  color: #ffaa7d;
+  color: #FFD3B6;
 }
 
 .card-tag img {
@@ -285,18 +298,25 @@ article div h3 {
   background-color: #FFF0E6;
 }
 
+@media (max-width: 991px) {
+  .organizaciones-section {
+    margin: 0px 12px;
+  }
+}
 .titulo-galeria {
   text-align: center;
   margin: 0px 60px;
-  padding-top: 368px;
-  padding-bottom: 24px;
+  padding-top: 468px;
+  padding-bottom: 40px;
 }
 
 .grid-container {
+  max-width: 1300px;
+  box-sizing: border-box;
   display: grid;
-  margin: 0px 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
   gap: 24px;
-  padding: 0%;
   grid-template-areas: "explora elige elige" "explora conecta participa" "impacta impacta sigue";
 }
 
@@ -345,12 +365,13 @@ article div h3 {
   }
   .grid-container {
     display: flex;
+    max-width: 1300px;
     flex-direction: row;
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    margin: 0;
+    margin: 0px 12px;
     padding-bottom: 20px;
     width: 100%;
   }
@@ -365,6 +386,7 @@ article div h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: auto;
     height: 460px;
   }
 }
@@ -404,7 +426,7 @@ article div h3 {
 .hero-image {
   width: 300px;
   position: absolute;
-  bottom: -280px;
+  bottom: -380px;
 }
 
 @media (max-width: 991px) {
@@ -417,7 +439,7 @@ article div h3 {
   }
   .hero-image {
     width: 250px;
-    bottom: -300px;
+    bottom: -400px;
   }
 }
 .accordion {
@@ -588,12 +610,13 @@ article div h3 {
 
 .galeria-seccion h2 {
   margin-bottom: 40px;
+  margin-top: 80px;
 }
 
 .galeria-contenedor-flex {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 38px;
 }
 
 @media (max-width: 991px) {
@@ -628,6 +651,10 @@ article div h3 {
   .inter-hero {
     margin: 0px 12px;
   }
+  h1 {
+    font-size: 42px;
+    text-align: center;
+  }
 }
 .taglineproposito {
   background-color: #f3e9d7;
@@ -643,8 +670,39 @@ article div h3 {
 
 .article-text-container {
   flex: 1.2;
-  margin: 60px;
+  margin: 0px 60px;
+  padding-right: 60px;
   justify-content: center;
+}
+
+.innovacion-seccion {
+  margin: 0;
+  padding-right: 60px;
+  text-align: right;
+}
+
+.text-reverse {
+  margin: 18px;
+  padding-left: 40px;
+}
+
+@media (max-width: 991px) {
+  article {
+    flex-direction: column;
+    margin: 0;
+  }
+  .innovacion-seccion {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .img-contenedor-article {
+    margin: 0px 12px;
+    align-self: left;
+  }
+  .article-text-container {
+    margin: 0px 12px;
+    padding: 42px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

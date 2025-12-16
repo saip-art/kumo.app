@@ -1,5 +1,5 @@
 @use '../utilities/extend';
-@use '../utilities/mixins';
+@use '../utilities/variables';
 
 article {
     @extend %articulos;
@@ -14,7 +14,7 @@ article div h3 {
 }
 
 .taglineinnovacion {
-      background-color: #F0E4E9;   
+    background-color: #F0E4E9;   
 }
 
 .taglinered {
@@ -26,6 +26,44 @@ article div h3 {
 }
 
 .article-text-container {
-    @include mixins.text-conteiner (center);
+    flex: 1.2;
+    margin: variables.$margin-desktop;
+    padding-right: 60px;
+    justify-content: center ;
 }
 
+
+.innovacion-seccion {
+    margin: 0;
+    padding-right: 60px;
+    text-align: right;
+}
+
+.text-reverse {
+    margin: 18px; 
+    padding-left: 40px;
+}
+
+@media (max-width: 991px) {
+    article { 
+    flex-direction: column;
+    margin: 0;
+    }
+
+    .innovacion-seccion { 
+    flex-direction: column-reverse; 
+    text-align: left;
+    }
+
+  .img-contenedor-article {
+    margin: variables.$margin-mobile ;
+    align-self: left;
+    }
+.article-text-container {
+    margin: variables.$margin-mobile ;
+    padding: 42px 0;
+    }
+}
+
+
+// no logre encontrar el por que del scroll horizontal que se hace en los articles
